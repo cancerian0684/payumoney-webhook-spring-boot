@@ -3,5 +3,18 @@
 [abstract]
 Implementing Payumoney Webhook with Spring Boot Server Side.
 
-Code for my blog on +
+.What is a Webhook?
+****
+Webhook is a HTTP callback. The callback is done to a url specified while creating a webhook. The webhook callbacks are event driven i.e. a callback to a webhook will be done whenever the event (payment success, failure, refund, etc) associated with the webhook occurs.
+****
+
+== Why Webhooks are necessary for Payment gateway Integration
+Webhooks make sure that any intermittent payment failures (due to spike in server load, hitting back button during payment by customer, etc.) are handled gracefully and payments get processed without manual intervention. Webhooks makes entire payment process resilient to failures, thus reduces manual support.
+
+
+.Accompanied codebase for my blogpost +
 https://www.javacodemonk.com/post/92/integrating-payumoney-webhooks-with-your-java-backend
+
+.References
+1. https://blog.payumoney.com/introducing-payumoney-webhooks-get-callbacks-to-your-server/
+2. https://github.com/payumoney-india/Webhooks/raw/master/Transaction_POST_Format.pdf
