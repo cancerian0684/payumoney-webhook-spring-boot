@@ -12,7 +12,7 @@ Webhook is a HTTP callback. The callback is done to a url specified while creati
 Webhooks make sure that any intermittent payment failures (due to spike in server load, hitting back button during payment by customer, etc.) are handled gracefully and payments get processed without manual intervention. Webhooks makes entire payment process resilient to failures, thus reduces manual support.
 
 
-.Accompanied codebase for my blogpost +
+.Accompanied blogpost for this repository
 https://www.javacodemonk.com/post/92/integrating-payumoney-webhooks-with-your-java-backend
 
 .References
